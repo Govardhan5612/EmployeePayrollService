@@ -56,6 +56,11 @@ public class EmployeePayrollService {
         System.out.println("Employee payroll data : " + employeePayrollDataList);
     }
 
+    public long count() {
+        long count = employeePayrollDataList.size();
+        return count;
+    }
+
     public static void main(String[] args) {
         /**
          * In this method call the object level methods
