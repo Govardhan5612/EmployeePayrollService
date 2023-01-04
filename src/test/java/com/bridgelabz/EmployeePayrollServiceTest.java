@@ -22,4 +22,10 @@ public class EmployeePayrollServiceTest {
         long entries = employeePayrollService.count();
         Assert.assertEquals(3, entries);
     }
+    @Test
+    public void givenFileOnReadingFromFileMatchTheEmployeeCount(){
+        EmployeePayrollService employee = new EmployeePayrollService();
+        long entries = employee.count();
+        Assert.assertEquals(3, entries);
+    }
 }
